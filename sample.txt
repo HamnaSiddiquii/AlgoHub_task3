@@ -1,0 +1,5 @@
+This is a sample file in the agent's sandboxed workspace.
+The agent's file_reader tool can read files like this one,
+but cannot read anything outside this workspace directory.
+
+Numbers to try with the agent: 42, 17, 256.
