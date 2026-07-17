@@ -1,6 +1,6 @@
 # Multi-Tool Agent (Week 3)
 
-An agent built with LangChain + GPT-4o that can use four tools — **file reader**,
+An agent built with LangChain + gemini-3.1-flash-lite that can use four tools — **file reader**,
 **sandboxed code executor**, **web search**, and **calculator** — deployed behind
 a **FastAPI** backend with a **Streamlit** front end.
 
@@ -80,19 +80,6 @@ curl -X POST http://localhost:8000/agent \
 This is independent of the Streamlit app above — you don't need it running for
 the UI to work.
 
-## Swapping in Claude instead of GPT-4o
-
-The card specifies GPT-4o, but the tool layer is model-agnostic. To use Claude instead:
-
-```bash
-pip install langchain-anthropic
-```
-
-```python
-# in app/agent.py
-from langchain_anthropic import ChatAnthropic
-llm = ChatAnthropic(model="claude-sonnet-4-6", temperature=0)
-```
 
 ## Notes on the sandbox
 
