@@ -51,6 +51,7 @@ so there's no separate backend server to start or connection errors to debug:
 ```bash
 streamlit run streamlit_app.py
 ```
+Live Demo: https://algoapptask3-6wpeimmwtc3bpfysyef3kl.streamlit.app/
 
 Then open the URL it prints (usually http://localhost:8501) and try:
 - `What is 12 * (7 + sqrt(9))?` → calculator
